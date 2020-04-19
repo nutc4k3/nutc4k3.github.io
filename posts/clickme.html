@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+.bg {
+  /* The image used */
+  background-image: url("/imgs/wall_hellowww.gif");
+
+  /* Full height */
+  height: 120%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+button {
+  background-color: rgba(73, 75, 73, 0.479); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  display: inline-block;
+
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+</style>
+</head>
+<body>
+
+<video controls autoplay>
+  <source src="../imgs/zoom_chip.mp4" type="video/mp4">
+</video>
+<div class="bg">
+
+    <button type="button" onclick="window.location.href='segundo_dia.html'">>></button>
+  
+  </div>
+</body>
+</html>

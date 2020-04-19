@@ -1,0 +1,1033 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>segundo_dia</title><link href='https://fonts.loli.net/css?family=Inconsolata:400,700&subset=latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857143; overflow-x: hidden; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; tab-size: 4; background-position: inherit inherit; background-repeat: inherit inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; word-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) { 
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; line-height: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.701961); color: rgb(85, 85, 85); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right-width: 0px; background-color: inherit; }
+.CodeMirror-linenumber { }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; position: relative !important; background-position: inherit inherit; background-repeat: inherit inherit; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; background-position: 0px 0px; background-repeat: initial initial; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print { 
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid-page; break-before: avoid-page; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid-page; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background-color: rgb(204, 204, 204); display: block; overflow-x: hidden; background-position: initial initial; background-repeat: initial initial; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) { 
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background-color: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; }
+a.md-print-anchor { white-space: pre !important; border: none !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; text-shadow: initial !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom-width: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+svg[id^="mermaidChart"] { line-height: 1em; }
+mark { background-color: rgb(255, 255, 0); color: rgb(0, 0, 0); background-position: initial initial; background-repeat: initial initial; }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+mark .md-meta { color: rgb(0, 0, 0); opacity: 0.3 !important; }
+
+
+.CodeMirror { height: auto; }
+.CodeMirror.cm-s-inner { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-scroll { overflow-y: hidden; overflow-x: auto; z-index: 3; }
+.CodeMirror-gutter-filler, .CodeMirror-scrollbar-filler { background-color: rgb(255, 255, 255); }
+.CodeMirror-gutters { border-right-width: 1px; border-right-style: solid; border-right-color: rgb(221, 221, 221); background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; white-space: nowrap; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-linenumber { padding: 0px 3px 0px 5px; text-align: right; color: rgb(153, 153, 153); }
+.cm-s-inner .cm-keyword { color: rgb(119, 0, 136); }
+.cm-s-inner .cm-atom, .cm-s-inner.cm-atom { color: rgb(34, 17, 153); }
+.cm-s-inner .cm-number { color: rgb(17, 102, 68); }
+.cm-s-inner .cm-def { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-variable { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-variable-2 { color: rgb(0, 85, 170); }
+.cm-s-inner .cm-variable-3 { color: rgb(0, 136, 85); }
+.cm-s-inner .cm-string { color: rgb(170, 17, 17); }
+.cm-s-inner .cm-property { color: rgb(0, 0, 0); }
+.cm-s-inner .cm-operator { color: rgb(152, 26, 26); }
+.cm-s-inner .cm-comment, .cm-s-inner.cm-comment { color: rgb(170, 85, 0); }
+.cm-s-inner .cm-string-2 { color: rgb(255, 85, 0); }
+.cm-s-inner .cm-meta { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-qualifier { color: rgb(85, 85, 85); }
+.cm-s-inner .cm-builtin { color: rgb(51, 0, 170); }
+.cm-s-inner .cm-bracket { color: rgb(153, 153, 119); }
+.cm-s-inner .cm-tag { color: rgb(17, 119, 0); }
+.cm-s-inner .cm-attribute { color: rgb(0, 0, 204); }
+.cm-s-inner .cm-header, .cm-s-inner.cm-header { color: rgb(0, 0, 255); }
+.cm-s-inner .cm-quote, .cm-s-inner.cm-quote { color: rgb(0, 153, 0); }
+.cm-s-inner .cm-hr, .cm-s-inner.cm-hr { color: rgb(153, 153, 153); }
+.cm-s-inner .cm-link, .cm-s-inner.cm-link { color: rgb(0, 0, 204); }
+.cm-negative { color: rgb(221, 68, 68); }
+.cm-positive { color: rgb(34, 153, 34); }
+.cm-header, .cm-strong { font-weight: 700; }
+.cm-del { text-decoration: line-through; }
+.cm-em { font-style: italic; }
+.cm-link { text-decoration: underline; }
+.cm-error { color: red; }
+.cm-invalidchar { color: red; }
+.cm-constant { color: rgb(38, 139, 210); }
+.cm-defined { color: rgb(181, 137, 0); }
+div.CodeMirror span.CodeMirror-matchingbracket { color: rgb(0, 255, 0); }
+div.CodeMirror span.CodeMirror-nonmatchingbracket { color: rgb(255, 34, 34); }
+.cm-s-inner .CodeMirror-activeline-background { background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror { position: relative; overflow: hidden; }
+.CodeMirror-scroll { height: 100%; outline: 0px; position: relative; box-sizing: content-box; background-image: inherit; background-size: inherit; background-attachment: inherit; background-origin: inherit; background-clip: inherit; background-color: inherit; background-position: inherit inherit; background-repeat: inherit inherit; }
+.CodeMirror-sizer { position: relative; }
+.CodeMirror-gutter-filler, .CodeMirror-hscrollbar, .CodeMirror-scrollbar-filler, .CodeMirror-vscrollbar { position: absolute; z-index: 6; display: none; }
+.CodeMirror-vscrollbar { right: 0px; top: 0px; overflow: hidden; }
+.CodeMirror-hscrollbar { bottom: 0px; left: 0px; overflow: hidden; }
+.CodeMirror-scrollbar-filler { right: 0px; bottom: 0px; }
+.CodeMirror-gutter-filler { left: 0px; bottom: 0px; }
+.CodeMirror-gutters { position: absolute; left: 0px; top: 0px; padding-bottom: 30px; z-index: 3; }
+.CodeMirror-gutter { white-space: normal; height: 100%; box-sizing: content-box; padding-bottom: 30px; margin-bottom: -32px; display: inline-block; }
+.CodeMirror-gutter-wrapper { position: absolute; z-index: 4; border: none !important; background-position: 0px 0px !important; background-repeat: initial initial !important; }
+.CodeMirror-gutter-background { position: absolute; top: 0px; bottom: 0px; z-index: 4; }
+.CodeMirror-gutter-elt { position: absolute; cursor: default; z-index: 4; }
+.CodeMirror-lines { cursor: text; }
+.CodeMirror pre { border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; border-width: 0px; font-family: inherit; font-size: inherit; margin: 0px; white-space: pre; word-wrap: normal; color: inherit; z-index: 2; position: relative; overflow: visible; background-position: 0px 0px; background-repeat: initial initial; }
+.CodeMirror-wrap pre { word-wrap: break-word; white-space: pre-wrap; word-break: normal; }
+.CodeMirror-code pre { border-right-width: 30px; border-right-style: solid; border-right-color: transparent; width: fit-content; }
+.CodeMirror-wrap .CodeMirror-code pre { border-right-style: none; width: auto; }
+.CodeMirror-linebackground { position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 0; }
+.CodeMirror-linewidget { position: relative; z-index: 2; overflow: auto; }
+.CodeMirror-wrap .CodeMirror-scroll { overflow-x: hidden; }
+.CodeMirror-measure { position: absolute; width: 100%; height: 0px; overflow: hidden; visibility: hidden; }
+.CodeMirror-measure pre { position: static; }
+.CodeMirror div.CodeMirror-cursor { position: absolute; visibility: hidden; border-right-style: none; width: 0px; }
+.CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+.CodeMirror-focused div.CodeMirror-cursor { visibility: inherit; }
+.cm-searching { background-color: rgba(255, 255, 0, 0.4); background-position: initial initial; background-repeat: initial initial; }
+@media print { 
+  .CodeMirror div.CodeMirror-cursor { visibility: hidden; }
+}
+
+
+@include-when-export url(https://fonts.loli.net/css?family=Inconsolata:400,700&subset=latin-ext);
+
+:root {
+  --bg-color: #222;
+  --side-bar-bg-color: #5F5F5F;
+  --active-file-text-color: #222;
+  --text-color: #ebebeb;
+  --window-border: 1px solid #606060;
+  --active-file-bg-color: rgba(219, 219, 253, 0.4);
+  --active-file-text-color: white;
+  --control-text-color: #ccc;
+}
+
+html, body {
+  font-size: 16px;
+  color: #ebebeb;
+  background: #222;
+  background: var(--bg-color);
+  font-family: 'Inconsolata', monospace;
+}
+
+/* latin-ext */
+/* latin */
+html.mac-supports-vibrant,
+.mac-supports-vibrant body {
+  
+}
+
+#write {
+  padding-left: 10ch;
+  padding-right: 10ch;
+}
+/**
+ * ---------------------
+ * Block Elements
+ */
+pre.md-meta-block {
+  font-family: monospace;
+  color: #DDD;
+  padding: 15px;
+  background: inherit;
+  border: 1px grey dashed;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+[mdlike='h1'],
+[mdlike='h2'],
+[mdlike='h3'],
+[mdlike='h4'],
+[mdlike='h5'],
+[mdlike='h6'] {
+  font-weight: bold;
+  font-family: "PT Mono", monospace;
+  color: #dbdbfd;
+}
+[mdlike='h1'] > .md-blockmeta,
+[mdlike='h2'] > .md-blockmeta,
+[mdlike='h3'] > .md-blockmeta,
+[mdlike='h4'] > .md-blockmeta,
+[mdlike='h5'] > .md-blockmeta,
+[mdlike='h6'] > .md-blockmeta {
+  color: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+h1,
+[mdlike='h1'] {
+  font-size: 2rem;
+}
+h1:before {
+  content: "# ";
+}
+h2,
+[mdlike='h2'] {
+  font-size: 1.6rem;
+}
+h2:before {
+  content: "## ";
+}
+h3,
+[mdlike='h3'] {
+  font-size: 1.3rem;
+}
+h3:before,
+h3.md-focus:before {
+  content: "### ";
+}
+h4,
+h5,
+h6,
+[mdlike='h4'],
+[mdlike='h5'],
+[mdlike='h6'] {
+  color: #549ad8;
+}
+h4,
+[mdlike='h4'] {
+  font-size: 1.2rem;
+}
+h4:before,
+h4.md-focus:before {
+  content: "#### ";
+}
+h5,
+[mdlike='h5'] {
+  font-size: 1.1rem;
+}
+h5:before,
+h5.md-focus:before {
+  content: "##### ";
+}
+h6,
+[mdlike='h6'] {
+  font-size: 1rem;
+}
+h6:before,
+h6.md-focus:before {
+  content: "####### ";
+}
+/** override the default style for focused headings */
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  position: inherit;
+  left: initial;
+  float: none;
+  top: initial;
+  font-size: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  vertical-align: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+table {
+  line-height: 1.6rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  empty-cells: show;
+  border: 1px solid #cbcbcb;
+}
+thead {
+  background-color: #263238;
+  color: #f5f5f5;
+  text-align: left;
+  vertical-align: bottom;
+}
+td,
+th {
+  border-left: 1px solid #cbcbcb;
+  border-width: 0 0 0 1px;
+  margin: 0;
+  overflow: visible;
+  padding: .5em 1em;
+}
+.md-toc-item {
+  position: relative;
+}
+.md-toc-inner {
+  width: 100%;
+  display: inline-block;
+}
+a.md-toc-inner {
+  color: #CCC;
+}
+.md-toc-h2 .md-toc-inner {
+  padding-left: 2em;
+  margin-left: 0;
+}
+.md-toc-h3 .md-toc-inner {
+  padding-left: 4em;
+  margin-left: 0;
+}
+.md-toc-h4 .md-toc-inner {
+  padding-left: 6em;
+  margin-left: 0;
+}
+.md-toc-h5 .md-toc-inner {
+  padding-left: 8em;
+  margin-left: 0;
+}
+.md-toc-h6 .md-toc-inner {
+  padding-left: 10em;
+  margin-left: 0;
+}
+#write > table {
+  width: 100%;
+}
+#write > h1,
+#write > [mdlike='h1'] {
+  margin-left: -2ch;
+}
+#write > h2,
+#write > [mdlike='h2'] {
+  margin-left: -3ch;
+}
+#write > h3,
+#write > [mdlike='h3'] {
+  margin-left: -4ch;
+}
+#write > h4,
+#write > [mdlike='h4'] {
+  margin-left: -5ch;
+}
+#write > h5,
+#write > [mdlike='h5'] {
+  margin-left: -6ch;
+}
+#write > h6,
+#write > [mdlike='h6'] {
+  margin-left: -7ch;
+}
+#write p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6,
+#write [mdlike='h1'],
+#write [mdlike='h2'],
+#write [mdlike='h3'],
+#write [mdlike='h4'],
+#write [mdlike='h5'],
+#write [mdlike='h6'] {
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+}
+@media (min-width: 800px) {
+  .pin-outline #write {
+    padding-left: 10ch;
+    padding-right: 6ch;
+  }
+
+  #write {
+    padding-left: 12ch;
+    padding-right: 12ch;
+  }
+  #write > h6,
+  #write > p [mdlike='h6'] {
+    margin-left: -8ch;
+  }
+}
+@media (max-width: 1200px) {
+  .pin-outline #write {
+    padding-left: 10ch;
+    padding-right: 8ch;
+  }
+
+  .pin-outline #write > h1,
+  .pin-outline #write > h2,
+  .pin-outline #write > h3,
+  .pin-outline #write > h4,
+  .pin-outline #write > h5,
+  .pin-outline #write > h6,
+  .pin-outline #write > p [mdlike='h1'],
+  .pin-outline #write > p [mdlike='h2'],
+  .pin-outline #write > p [mdlike='h3'],
+  .pin-outline #write > p [mdlike='h4'],
+  .pin-outline #write > p [mdlike='h5'],
+  .pin-outline #write > p [mdlike='h6'] {
+    margin-left: 0;
+  }
+}
+@media (max-width: 600px) {
+  .pin-outline #write {
+    padding-left: 4ch;
+    padding-right: 4ch;
+  }
+
+  #write {
+    padding-left: 4ch;
+    padding-right: 4ch;
+  }
+  #write > h1,
+  #write > h2,
+  #write > h3,
+  #write > h4,
+  #write > h5,
+  #write > h6,
+  #write > p [mdlike='h1'],
+  #write > p [mdlike='h2'],
+  #write > p [mdlike='h3'],
+  #write > p [mdlike='h4'],
+  #write > p [mdlike='h5'],
+  #write > p [mdlike='h6'] {
+    margin-left: 0;
+  }
+}
+ul[cid] {
+  list-style-type: none;
+}
+ul[cid] li:before {
+  content: "*";
+  margin-left: -3ch;
+  position: absolute;
+  color: #4fac4f;
+}
+ul[data-mark="-"] > li:before {
+  content: "-";
+}
+ul[data-mark="+"] > li:before {
+  content: "+";
+}
+.task-list > li:before {
+  margin-left: -6ch;
+}
+ol[cid] {
+  counter-reset: item;
+  list-style-type: none;
+}
+ol[cid] > li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+  color: #4fac4f;
+  margin-left: -2ch;
+  position: absolute;
+}
+.task-list-item input:before {
+  content: '[ ]';
+  display: inline-block;
+  margin-left: -2ch;
+  width: 4ch;
+  position: absolute;
+  top: -1px;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #222;
+  color: #4fac4f;
+}
+.task-list-item input:checked:before {
+  content: '[x]';
+}
+.task-list-item input:checked ~ * {
+  text-decoration: line-through;
+}
+blockquote {
+  background-color: rgba(128, 128, 128, 0.05);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 20px;
+  border-left: 8px solid #979797;
+}
+hr {
+  position: relative;
+  height: 20px;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 20px;
+}
+hr:after {
+  content: "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  word-wrap: break-word;
+}
+/**
+ * Code Fences
+ */
+.md-fences:not(.md-fences-with-lineon) .cm-s-inner {
+  padding-left: 8px;
+}
+.CodeMirror.cm-s-inner {
+  padding-top: 8px;
+  border-radius: 3px;
+  padding-bottom: 16px;
+}
+.CodeMirror.cm-s-inner .CodeMirror-gutters {
+  background: #263238;
+  color: #537f7e;
+  border: none;
+}
+.CodeMirror .CodeMirror-guttermarker,
+.CodeMirror.cm-s-inner .CodeMirror-guttermarker,
+.CodeMirror .CodeMirror-guttermarker-subtle,
+.CodeMirror.cm-s-inner .CodeMirror-guttermarker-subtle,
+.CodeMirror .CodeMirror-linenumber,
+.CodeMirror.cm-s-inner .CodeMirror-linenumber {
+  color: #537f7e;
+}
+.CodeMirror .CodeMirror-cursor,
+.CodeMirror.cm-s-inner .CodeMirror-cursor {
+  border-left: 1px solid #f8f8f0;
+}
+.CodeMirror div.CodeMirror-selected,
+.CodeMirror.cm-s-inner div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.15);
+}
+.CodeMirror .CodeMirror-focused div.CodeMirror-selected,
+.CodeMirror.cm-s-inner .CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+.CodeMirror .CodeMirror-line::selection,
+.CodeMirror.cm-s-inner .CodeMirror-line::selection,
+.CodeMirror .CodeMirror-line > span::selection,
+.CodeMirror.cm-s-inner .CodeMirror-line > span::selection,
+.CodeMirror .CodeMirror-line > span > span::selection,
+.CodeMirror.cm-s-inner .CodeMirror-line > span > span::selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.CodeMirror .CodeMirror-line::-moz-selection,
+.CodeMirror.cm-s-inner .CodeMirror-line::-moz-selection,
+.CodeMirror .CodeMirror-line > span::-moz-selection,
+.CodeMirror.cm-s-inner .CodeMirror-line > span::-moz-selection,
+.CodeMirror .CodeMirror-line > span > span::-moz-selection,
+.CodeMirror.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.CodeMirror .CodeMirror-activeline-background,
+.CodeMirror.cm-s-inner .CodeMirror-activeline-background {
+  background: rgba(0, 0, 0, 0);
+}
+.CodeMirror .cm-keyword,
+.CodeMirror.cm-s-inner .cm-keyword {
+  color: #c792ea;
+}
+.CodeMirror .cm-operator,
+.CodeMirror.cm-s-inner .cm-operator {
+  color: #e9eded;
+}
+.CodeMirror .cm-variable-2,
+.CodeMirror.cm-s-inner .cm-variable-2 {
+  color: #80CBC4;
+}
+.CodeMirror .cm-variable-3,
+.CodeMirror.cm-s-inner .cm-variable-3 {
+  color: #82B1FF;
+}
+.CodeMirror .cm-builtin,
+.CodeMirror.cm-s-inner .cm-builtin {
+  color: #DECB6B;
+}
+.CodeMirror .cm-atom,
+.CodeMirror.cm-s-inner .cm-atom {
+  color: #ceb6b8;
+}
+.CodeMirror .cm-number,
+.CodeMirror.cm-s-inner .cm-number {
+  color: #ceb6b8;
+}
+.CodeMirror .cm-def,
+.CodeMirror.cm-s-inner .cm-def {
+  color: #e9eded;
+}
+.CodeMirror .cm-string,
+.CodeMirror.cm-s-inner .cm-string {
+  color: #C3E88D;
+}
+.CodeMirror .cm-string-2,
+.CodeMirror.cm-s-inner .cm-string-2 {
+  color: #80CBC4;
+}
+.CodeMirror .cm-comment,
+.CodeMirror.cm-s-inner .cm-comment {
+  color: #546E7A;
+}
+.CodeMirror .cm-variable,
+.CodeMirror.cm-s-inner .cm-variable {
+  color: #ebebeb;
+}
+.CodeMirror .cm-tag,
+.CodeMirror.cm-s-inner .cm-tag {
+  color: #f76764;
+}
+.CodeMirror .cm-meta,
+.CodeMirror.cm-s-inner .cm-meta {
+  color: #DDD;
+}
+.CodeMirror .cm-attribute,
+.CodeMirror.cm-s-inner .cm-attribute {
+  color: #8888fd;
+}
+.CodeMirror .cm-property,
+.CodeMirror.cm-s-inner .cm-property {
+  color: #ebebeb;
+}
+.CodeMirror .cm-qualifier,
+.CodeMirror.cm-s-inner .cm-qualifier {
+  color: #DECB6B;
+}
+.CodeMirror .cm-variable-3,
+.CodeMirror.cm-s-inner .cm-variable-3 {
+  color: #DECB6B;
+}
+.CodeMirror .cm-tag,
+.CodeMirror.cm-s-inner .cm-tag {
+  color: #ff5370;
+}
+.CodeMirror .cm-header,
+.CodeMirror.cm-s-inner .cm-header,
+.CodeMirror .cm-header,
+.CodeMirror.cm-s-inner .cm-header {
+  color: #b6e6ff;
+}
+.CodeMirror .cm-error,
+.CodeMirror.cm-s-inner .cm-error {
+  color: #ffffff;
+  background-color: #EC5F67;
+}
+.CodeMirror .cm-link,
+.CodeMirror.cm-s-inner .cm-link {
+  color: #B2B2E0;
+}
+.cm-s-inner {
+  background-color: #263238;
+  color: #e9eded;
+}
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+/**apply to code fences with plan text**/
+.md-fences {
+  background: #263238;
+  color: #e9eded;
+  border: none;
+  overflow-x: visible;
+  white-space: pre;
+  border-radius: 3px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.md-fences .CodeMirror.cm-s-inner:before {
+  content: "``` " attr(lang);
+}
+.md-fences .CodeMirror-scroll:after {
+  content: " ";
+}
+.md-fences .CodeMirror.cm-s-inner:after {
+  content: "```";
+  bottom: 0;
+  z-index: 99;
+}
+.md-fences .code-tooltip {
+  background-color: #263238;
+}
+/**
+ * Inline Elements
+ */
+code {
+  color: #caca16;
+  font-size: 0.9em;
+}
+mark {
+  background: bisque;
+}
+strong {
+  color: #ffffc5;
+}
+em {
+  color: #c885f5;
+}
+a {
+  color: #8ac9ff;
+}
+#write a:hover {
+  background-color: #2a6496;
+  color: white;
+  text-decoration: none;
+}
+.md-meta,
+.md-content {
+  display: inline;
+}
+#typora-source .cm-header {
+  font-weight: bold;
+  font-family: "PT Mono", monospace;
+  color: #dbdbfd;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+#typora-source .cm-strong {
+  color: #ffffc5;
+}
+#typora-source .cm-em {
+  color: #c885f5;
+}
+#typora-source .cm-link {
+  color: #8ac9ff;
+}
+#typora-source .cm-string {
+  color: #5b808d;
+}
+#typora-source .cm-comment {
+  color: #caca16;
+}
+/*
+ * Electron UI
+ */
+.outline-item:hover {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
+#write div.md-toc-tooltip {
+  background-color: #222;
+}
+.btn,
+.btn .btn-default {
+  background: transparent;
+  color: #b8bfc6;
+}
+.md-table-edit {
+  border-top: 1px solid gray;
+  background-color: #363B40;
+}
+.popover-title {
+  background: transparent;
+}
+.context-menu {
+  border-radius: 0;
+}
+.context-menu.dropdown-menu > li > a:hover,
+.context-menu.dropdown-menu > li > a:focus {
+  background-color: inherit;
+}
+.context-menu.dropdown-menu .divider {
+  background-color: #777777;
+}
+.btn {
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #444449;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.btn:hover,
+.btn:focus,
+#footer-word-count:hover,
+.show-word-count #footer-word-count,
+.mouse-entered .footer-btn:hover {
+  color: #fff;
+  border-color: #777;
+  background-color: #777;
+  outline: 0;
+}
+#outline-btn,
+#outline-btn:hover .ion-android-radio-button-on {
+  color: white;
+}
+.btn.btn-primary {
+  color: #FFF;
+  background-color: #777;
+  border-color: #777;
+}
+.btn.btn-primary:hover {
+  color: #FFF;
+  background-color: #428bca;
+  border-color: #428bca;
+}
+.mouse-entered #top-titlebar .toolbar-icon.btn:hover {
+  background-color: #777777;
+  color: #f5f5f5;
+}
+#md-searchpanel,
+#md-notification {
+  left: 0;
+}
+#md-searchpanel,
+#md-notification,
+.on-search-panel-open header,
+.modal-content,
+.popover,
+.dropdown-menu,
+.megamenu-menu,
+#outline-dropmenu,
+.typora-node #outline-dropmenu {
+  background-color: #42464A;
+}
+.popover.bottom > .arrow:after {
+  border-bottom-color: #42464A;
+}
+#md-notification {
+  color: #ddd;
+}
+.typora-node #outline-dropmenu {
+  border-right: 1px solid #555;
+}
+.info-panel-tab.active,
+.info-panel-tab.active:hover,
+.info-panel-tab:hover {
+  color: #ddd;
+}
+.menu-style-btn.active,
+.context-menu.dropdown-menu > .active > a,
+.context-menu.dropdown-menu > li > a:hover {
+  background-color: #777777;
+  color: white;
+}
+.form-control:focus {
+  color: #999;
+}
+.input-group-addon {
+  padding-right: 16px;
+}
+input,
+input.form-control {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: inherit;
+}
+.dropdown-menu .menu-item-container a.menu-style-btn:not(.menu-style-btn-2width) {
+  width: calc(25% - 2.5px);
+}
+#w-unpin {
+  color: #222;
+}
+.dropdown-menu .divider {
+  background-color: #999;
+}
+#footer-word-count-info {
+  bottom: 28px;
+}
+#megamenu-content,
+.megamenu-opened header {
+  background-color: #222;
+  background: #222;
+}
+.md-expand.md-image > .md-meta {
+  background-color: rgba(219, 219, 219, 0.86);
+}
+@media (min-width: 1000px) {
+  .ty-footer {
+    background-color: inherit;
+  }
+}
+
+.md-image>.md-meta {
+  color: #b5adcd;
+  background-color: rgba(190, 190, 190, 0.37);
+}
+
+.md-expand.md-image > .md-meta {
+  color: #5f5b6c;
+}
+
+#typora-sidebar {
+  background: transparent;
+}
+
+.html-for-mac #typora-sidebar {
+  border-right: none;
+}
+
+content,
+titlebar {
+  background: var(--bg-color);
+}
+
+.sidebar-footer {
+  background: #222;
+  border-top: 1px transparent solid;
+}
+
+.file-list-item,
+.sidebar-tabs {
+  border-top: none;
+  border-bottom: none;
+}
+
+.ty-side-sort-btn.active {
+  background: var(--bg-color);
+}
+
+.file-node-content:hover {
+  color: white;
+}
+
+.md-task-list-item>input {
+  margin-top: calc(1rem - 12px);
+}
+
+
+
+</style>
+</head>
+<body class='typora-export' >
+<div  id='write'  class = 'is-mac'><p><em><span>Leia ouvindo</span></em></p><iframe src="https://open.spotify.com/embed/track/4PevTpnIWy2D1wIQZY3MmX" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><h3><a name="x86-refresher-pt-2" class="md-header-anchor"></a><span>x86 refresher pt. 2</span></h3><p><span>Se você não viu o vídeo que redirecionava pra essa página, eu não te culpo, falhei várias vezes em colocar o vídeo em autoplay... mas, enfim, se quiser ver é só voltar e clicar na tela. Esse vídeo foi feito pela NISEnet: </span><a href='https://www.youtube.com/watch?v=Knd-U-avG0c&amp;list=WL&amp;index=16&amp;t=157s' target='_blank' class='url'>https://www.youtube.com/watch?v=Knd-U-avG0c&list=WL&index=16&t=157s</a><span>. Obrigada NISEnet por sempre me lembrar do mundo mágico que é a computação╰(◡‿◡✿╰)</span></p><p><span>Bom, no post passado eu falei que estávamos passando por um momento de &quot;refrescar&quot; a mente enquanto o curso da Offsec não começava, por isso, bem vindo a parte dois do nosso momento refreshing! (ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</span></p><p><span>          </span><img src="https://nutc4k3.github.io/imgs/pool.gif" referrerpolicy="no-referrer" alt="pool" width="200" height="200"></p><p><span>Nós estávamos vendo esse código aqui oh:</span></p><pre spellcheck="false" class="md-fences md-end-block ty-contain-cm modeLoaded" lang="assembly" style="page-break-inside: unset;"><div class="CodeMirror cm-s-inner CodeMirror-wrap" lang="assembly"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 28px; left: 12px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: 0px; border-right-width: 0px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-code" role="presentation" style=""><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: 0px; width: 0px;"></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">;hello_world.asm</span></span></pre></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">global</span> <span class="cm-builtin">_start</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">section</span> <span class="cm-builtin">.text</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-builtin">_start</span>:</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-comment">;print hello world</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">eax</span>, 0x4</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">ebx</span>, 0x1</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">ecx</span>, message</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">edx</span>, mlen</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">int</span> <span class="cm-keyword">0x80</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-comment">;exit</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">eax</span>, 0x1</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mov</span> <span class="cm-variable-2">ebx</span>, 0x5</span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">int</span> <span class="cm-keyword">0x80</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" class="cm-tab-wrap-hack" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-keyword">section</span> <span class="cm-builtin">.data</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tag">message:</span> db <span class="cm-string">"Hello World!"</span></span></pre><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-tab" role="presentation" cm-text="	">  </span><span class="cm-keyword">mlen</span> <span class="cm-tab" role="presentation" cm-text="	"> </span><span class="cm-tab" role="presentation" cm-text="	">  </span> <span class="cm-keyword">equ</span> $-message</span></pre></div></div></div></div></div><div style="position: absolute; height: 0px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 400px;"></div><div class="CodeMirror-gutters" style="display: none; height: 400px;"></div></div></div></pre><p><span>Se tudo ocorreu bem, você deve estar vendo um &quot;Hello World!&quot; depois de rodar ./helloworld (ou qualquer outro nome que você colocou para o seu código). </span></p><p><span>Legal...</span></p><p><span>...mas que que ta rolando?</span></p><p><span>Para entender melhor, antes, é bacana conhecer alguns outros conceitos. Então bora pro nosso #tbt hehe</span></p><p><span>Se você leu o post passado, você já entendeu o processo de digestão macro do código até chegar a nível de máquina (famoso binário), podemos chamar de &quot;Assembly x86 toolchain&quot;, entretanto, é importante compreender o </span><em><span>modelo de alocação do código em memória</span></em><span> para ajudar-nos a cada vez mais contruir a nossa capacidade de abstração quando analisando assembly. Foi em um MOOC israelense chamado &quot;From NAND to Tetris&quot; que eu ouvi &quot;</span><em><span>Computer science is a thousand layers of abstraction</span></em><span>&quot; do professor </span><strong><span>Shimon Schocken</span></strong><span>, depois desse dia eu nunca mais estudei computação da mesma forma... </span></p><p><strong><span>Bullshitting sobre minha vida</span></strong><span> </span><em><span>pode pular se quiser</span></em><span> </span></p><p><span>Eu passei por uma transição bem engraçada desde o dia que comecei em computação pra hoje. Até os 22 anos eu não imaginava que o computador era mais que uma carcaça mágica para responder emails, pesquisar no google e usar o facebook, nessa época eu estava mais preocupada em entender o processo de autofagia celular e me orgulhava por conseguir fechar uma tarefa usando o task manager... rs ...até que me apresentaram o Arduino e, então, eu comecei um processo de desconstrução da tecnologia que seguiu mais ou menos nessa linha:</span></p><p><span>As coisas auto program-se --&gt; Existe uma linguagem de programação --&gt; Existe mais de uma linguagem de programação --&gt; Eu posso criar uma linguagem de programação --&gt; Eu posso criar um interpretador/compilador para essa linguagem --&gt; Eu posso criar o hardware para embedar o compilador --&gt; Eu não preciso de código para realizar uma ação no hardware --&gt; Tudo não passa de ter ou não energia --&gt; Eu posso criar uma nova arquitetura e modelos de computação se eu quiser.</span></p><p><img src="https://nutc4k3.github.io/imgs/mindblown.gif" referrerpolicy="no-referrer" alt="mindblown"></p><p><span>...Sim, quando eu comecei, eu achava que só existia uma linguagem de programação XD e, sim, eu tinha 22 anos, shame on me XD</span></p><p><span>A partir daí eu aprendi a importância de entender cada passinho do que estava estudando e de tentar abstrair isso na minha cabeça. Não foi rápido, eu estou a mais ou menos um ano voltando sempre nos mesmos conceitos, fazendo 3242346 desenhos diferentes e lendo 453456 artigos pra cada dia eu descobrir que sei menos. Masoquista? Talvez haha mas eu também aprendi a amar essa jornada!</span></p><p><span>      </span><img src="https://nutc4k3.github.io/imgs/cat_inlove.gif" referrerpolicy="no-referrer" alt="cat_inlove" width="150" height="150"></p><p><strong><span>fim do bullshitting</span></strong></p><p>&nbsp;</p><h3><a name="virtual-memory-model" class="md-header-anchor"></a><span>Virtual Memory Model</span></h3><p><span>A primeira coisa que precisamos abstrair é o modelo de memória virtual. Em poucas palavras, esse modelo divide de forma lógica a memória em </span><em><span>Kernel Space</span></em><span> e </span><em><span>User Space</span></em><span>. </span></p><p><img src="https://nutc4k3.github.io/imgs/virtual_memory.png" referrerpolicy="no-referrer" alt="virtual_memory"></p><p><span>O kernel é executado em </span><em><span>Kernel Space</span></em><span>. Esta parte da memória não pode ser acessada diretamente por processos de usuários normais, mas o kernel pode acessar todas as partes da memória. Para acessar alguma parte do kernel, os processos de usuário precisam usar chamadas predefinidas do sistema, como </span><code>open</code><span>, </span><code>read</code><span>, </span><code>write</code><span>, etc. As funções da biblioteca C, como </span><code>printf</code><span>, chamam a syscall </span><code>write</code><span> para imprimir na tela, por exemplo. </span></p><p><span>As syscalls agem como uma interface entre os processos do usuário e os processos do kernel. Os direitos de acesso são colocados no </span><em><span>Kernel Space</span></em><span> para impedir que os usuários mexam com o kernel e ferrem com o sistema sem querer :)</span></p><p><span>Portanto, quando ocorre uma chamada de syscall (redundante, eu sei rs), uma interrupção do software é enviada ao kernel. A CPU pode entregar o controle temporariamente para a rotina de tratamento de interrupção associada. O processo do kernel que foi interrompido pela interrupção é retomado depois que a rotina de tratamento da interrupção termina o que estiver fazendo.</span></p><p><em><span>Obrigada @b0rk &lt;3 </span><a href='https://twitter.com/b0rk/status/804200666226900992' target='_blank' class='url'>https://twitter.com/b0rk/status/804200666226900992</a><span>.</span></em></p><p><span>Going further, em um computador 32-bit, o endereço de memória possui 32 bits e normalmente é representado em hexadecimal, variando de 0x00000000 a 0xffffffff (4GB), essa parte sempre mexe com a nossa cabeça, então, assim, porque 4gb? 2^32 ~= 4gb que é o número total de possibilidades de 0 ou 1 em 32 espaços. Significa que se pegássemos 32 espaços:</span></p><p><span>-------------------------------- e fôssemos brincando de trocar 1 ou 0 pra cada espaço:</span></p><p><span>			</span><span>																			00000000000000000000000000000000</span></p><p><span>		</span><span>																			00000000000000000000000000000001... teríamos 4294967296 resultados, esses &quot;resultados&quot; seriam os nossos endereços de memória virtual, deu pra pegar a referência? </span></p><p><span>00000000000000000000000000000000 em binário é 0x00000000 em hex, porque cada hex tem 4 bits... </span><img src="https://nutc4k3.github.io/imgs/what.gif" referrerpolicy="no-referrer" alt="what" width="150" height="125"></p><p><span>Se você nunca parou para ficar abstraindo essa parte, ela pode ser bem confusa mesmo... mas uma coisa que você sempre deve ter em mente é que, no fim, tudo é binário. TUDO. Tirando o hardware em si rs, mas quando falamos de código rodando em hardware, com exceção de alguns hardwares rs, esse código vai ter que virar uma maçaroca de binário. Daí podemos fazer a análise inversa, assim:</span></p><p><span>Legal, você está me dizendo que o endereço lógico é representado em hexadecimal, como eu posso saber quantos bits um endereço tem?</span></p><ol start='' ><li><p><span>Um bit só pode ser 1 ou 0</span></p></li><li><p><span>Hexadecimal varia de 0 a F</span></p></li><li><p><span>Como é 0 e F em binário? R: 0 e 1111</span></p></li><li><p><span>Hmmmmmm, tem como eu traduzir F pra binário com menos de 4 &quot;espaços&quot;? R: Nope.</span></p></li><li><p><span>Eureka, hexa tem que ter 4 espaços para poder representar todas as suas formas. Para cada &quot;espaço&quot; eu só posso ter 1 ou 0, ou seja, espaço == bit, logo...</span></p><p><span>	</span><span> </span><strong><span>Hexa tem 4 bits.</span></strong><span> </span><img src="https://nutc4k3.github.io/imgs/genius.gif" referrerpolicy="no-referrer" alt="genius" width="150" height="125"></p><p><span>....Tá, mas calma, vamos continuar:</span></p><ol start='' ><li><p><span>Um endereço tem 8 espaços de &quot;hexas&quot; (oxffffffff), cada hexa tem 4 bits, um endereço tem 8x4 bits = 32 bits :o </span></p></li><li><p><span>E o que eu que posso fazer com um endereço virtual de memória? R: Você pode colocar os seus dados!! (como na imagem acima)</span></p></li><li><p><span>Poxan, mas eu só posso colocar 1 byte de dados em cada endereço? R: sim ;.;</span></p></li><li><p><span>Ok, então quantos bytes de dados eu posso colocar em um computador com 4294967296 possibilidades de endereços?</span></p><p><span></span><span>Se cada endereço ---- 1 byte</span></p><p><span>4294967296 endereços ---- 4294967296 bytes</span></p><p><span>4294967296 bytes ----  ~4 GB</span></p><p><span>WHAAAAT? então você está dizendo que eu só posso ter 4 GB de memória em um computador de 32-bit? Mas quando eu comprei o moço da loja disse que eu tinha 1 TB de memória pra poder por fotos, ele me enganou?</span></p><p><span>Não não, a ideia aqui é que você não vai poder tunar o seu pc de 32-bit com 16 GB de RAM porque ele não vai ter a capacidade de indexar tudo. Ele está referindo-se a memória não-volátil como a dos hard/solid-state drives e nós estamos falando de uma memória volátil, com acesso aleatório, chamada &quot;RAM&quot; </span><em><span>Random Access Memory</span></em><span>, também conhecida como memória principal.</span></p><p><em><span>Disclaimer</span></em><span> existem esquemas de endereçamento de memória que permitem que arquiteturas de 𝑘-bits (onde 𝑘 pode ser 32 ou menos) acessem mais de 2 𝑘 locais (onde um local não precisa ser restrito a bytes). Dá uma olhada no PAE(</span><strong><span>Physical Address Extensions</span></strong><span>,) da Intel ou lê a resposta desse cara aqui: </span><a href='https://www.quora.com/What-are-Intel-physical-address-extensions' target='_blank' class='url'>https://www.quora.com/What-are-Intel-physical-address-extensions</a></p><p><em><span>socorro</span></em><span> </span><em><span>pq eu fui estudar esse negocio</span></em><span> </span><em><span>achei que computação era uma ciência exata, mas toda hora muda os negocio tudo</span></em></p><p><span>          </span><img src="https://nutc4k3.github.io/imgs/crazy.gif" referrerpolicy="no-referrer" alt="crazy" width="150" height="125"></p><p><strong><span>relaxa, da uma respirada, vai passar rs</span></strong></p><p><span>Bora continuar, dá uma olhada nesse esquema:</span></p></li></ol></li></ol><p><img src="https://nutc4k3.github.io/imgs/memo_map.png" referrerpolicy="no-referrer" alt="memo_map" width="900" height="800"></p><ul><li><p><strong><span>Stack</span></strong></p><p><span>O stack está localizado logo abaixo do kernel do SO e uma particularidade é que ele &quot;cresce pra baixo&quot;, ou seja ele vai dos endereços mais altos para os mais baixos (pode crescer na direção oposta em algumas outras arquiteturas). Ele usa de uma estrutura de dados chamada LIFO (Last In, First Out). Essa pilha (a.k.a stack) é um tipo de dado abstrato que serve como uma coleção de elementos, com duas &quot;operações&quot; principais:</span></p><p><em><span>push</span></em><span> que adiciona um elemento à coleção; e</span>
+<em><span>pop</span></em><span> que remove o elemento mais recente. </span></p><p><img src="https://nutc4k3.github.io/imgs/LIFO.gif" referrerpolicy="no-referrer" alt="LIFO"></p><p><span>Esse segmento é dedicado ao armazenamento de todos os dados necessários para a chamada de uma função. Chamar uma função é o mesmo que empurrar </span><em><span>pushing</span></em><span> a execução da função chamada para o topo da pilha e, quando essa função é concluída, os resultados são retornados, retirando ou </span><em><span>popping</span></em><span> a função da pilha. O conjunto de dados enviado para a chamada de função é chamado de </span><em><span>stack frame</span></em><span> e contêm os seguintes dados:</span></p><ul><li><span>os argumentos passados para a rotina de execução;</span></li><li><span>o endereço de retorno para o chamador da rotina;</span></li><li><span>espaço para as variáveis locais da rotina;</span></li></ul><p><span>É assim que as funções recursivas são implementadas em C, cada vez que uma função recursiva se chama, um novo quadro de pilha é alocado no topo da pilha e, assim, o conjunto de variáveis em uma chamada é completamente independente do de outra chamada de função... Depois vamos olhar o stack em mais detalhes :)</span></p></li><li><p><strong><span>Heap + Shared Libs + Mappings</span></strong></p><p><span>Esse é o segmento em que a alocação dinâmica de memória geralmente ocorre. A área de heap começa no final do segmento BSS e &quot;cresce para cima&quot;, ou seja, para endereços de memória mais altos. É gerenciado pelo </span><code>malloc</code><span>/</span><code>new</code><span>, </span><code>free</code><span>/</span><code>delete</code><span>, que pode usar as syscalls </span><code>brk</code><span> e </span><code>sbrk</code><span> para ajustar seu tamanho.</span>
+<span>Essa área é compartilhada por todas as bibliotecas compartilhadas e módulos carregados dinamicamente em um processo. Mas nem liga muito pra isso por enquanto... :p</span></p></li><li><p><strong><span>BSS</span></strong></p><p><span>O segmento de &quot;dados não inicializado&quot;, geralmente chamado de segmento BSS (por conta do antigo assembler </span><em><span>Block Started by Symbol</span></em><span>) contém variáveis que não são inicializadas (estáticas) ou que foram inicializadas com o valor &quot;0&quot;. Por exemplo, uma variável declarada como </span><code>static int i;</code><span> seria alocada para o segmento BSS.</span></p></li><li><p><strong><span>Data</span></strong></p><p><span>Agora sim, aqui teremos as variáveis estáticas e globais que foram declaradas em um programa. Esse segmento pode ter ambos read-only e read-write dependendo do que for pedido. Um </span><code>const char* string = “hello world”</code><span> seria tratado como </span><strong><span>read-only</span></strong><span>, enquanto que </span><code>int x = 1</code><span> (declarada como global) seria tratado como </span><strong><span>read-write</span></strong><span>.</span></p></li><li><p><strong><span>Text</span></strong></p><p><span>O segmento Text guarda as instruções de máquina que devem ser executadas do programa e é </span><strong><span>read-only/execute</span></strong><span>. Normalmente ele é colocado &quot;embaixo&quot; do Stack/Heap para evitar overflows hehe Uma coisa legal de saber é que esse segmento é compartilhável de modo que apenas uma única cópia precisa estar na memória para programas que são executados com frequência, como editores de texto, o compilador C, shells, etc.</span></p></li></ul><p><span>Se você chegou até aqui, high five! </span><img src="https://nutc4k3.github.io/imgs/h5.gif" referrerpolicy="no-referrer" alt="h5" width="100" height="100"></p><p><span>Agora, vamos dar uma olhada de novo no nosso hello_world.asm laaa em cima de novo, você já consegue ver com outros olhos? </span></p><p><img src="https://nutc4k3.github.io/imgs/segmentos.png" referrerpolicy="no-referrer" alt="segmentos" width="700" height="600"></p><p><span>Acho que já é muita informação por hoje, né?</span></p><p><span>     </span><img src="https://nutc4k3.github.io/imgs/snail_by.gif" referrerpolicy="no-referrer" alt="snail_by" width="200" height="200"></p><p><em><span>Qualquer dúvida ou correção é só me chamar de boas no twitter </span><a href='https://twitter.com/nutcake7'><span>@nutcake7</span></a></em></p></div>
+</body>
+</html>
